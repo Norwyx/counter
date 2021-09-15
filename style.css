@@ -39,6 +39,7 @@ body {
 
 .button-container {
     display: flex;
+    flex-direction: row;
 }
 
 .btn {
@@ -59,3 +60,13 @@ body {
     color: var(--clr-white);
 }
 
+/* Mobile version */
+@media only screen and (max-width: 27.1875rem) {
+    .button-container {
+        flex-direction: column;
+    }
+
+    .btn {
+        margin-top: 2rem;
+    }
+}
